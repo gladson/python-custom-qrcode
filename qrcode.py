@@ -67,7 +67,7 @@ class   QRCode(object):
 
     def getStream(self):
         self._stream.seek(0)
-        return self.stream
+        return self._stream
 
     def getText(self):
         return self._text
