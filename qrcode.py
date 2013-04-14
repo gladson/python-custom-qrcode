@@ -6,7 +6,10 @@
 ##  Comment  : Useful class to generate custom QR
 ##             code easily. See example below.
 ##
-import Image
+try:
+    import Image
+except ImportError:
+    from PIL import Image
 import qrencode
 try:
     import cStringIO as StringIO
